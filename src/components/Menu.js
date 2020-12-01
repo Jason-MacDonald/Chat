@@ -7,7 +7,7 @@ import SignOut from './SignOut';
 const Menu = () => {
     return (
         <div className="ui big icon menu">
-            <a className="item">
+            {/* <a className="item">
                 <i className="big gamepad icon"></i>
             </a>
             <a className="item">
@@ -15,11 +15,11 @@ const Menu = () => {
             </a>
             <a className="item">
                 <i className="big video play icon"></i>
-            </a>
+            </a> */}
             <div className="right menu">
-                <a className="item">
+                <div className="item">
                     { auth && auth.currentUser ? <SignOut /> : <SignIn /> }
-                </a>
+                </div>
             </div>
         </div>
     );
