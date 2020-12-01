@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <Menu />
-      { auth && auth.currentUser ? <ChatRoom /> : null }      
+      { user ? <ChatRoom /> : null }      
     </div>
   );
 }
